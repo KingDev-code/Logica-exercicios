@@ -1,0 +1,13 @@
+<flowgorithm fileversion="4.0">
+    <function name="main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Relatório de Abastecimentos:&quot;" newline="True"/>
+            <output expression="&quot;Data        Quilometragem Combustível Litros Preço/Litro Dif. Preço Consumo (km/l) Dif. Consumo&quot;" newline="True"/>
+            <output expression="&quot;---------------------------------------------------------------&quot;" newline="True"/>
+            <output expression="&quot;02/05/2024  10000         Gasolina     45.0   5.50        0.00         200.00             0.00&quot;" newline="True"/>
+            <output expression="&quot;03/05/2024  10200         Etanol       40.0   4.80        -30.00       50.00              -150.00&quot;" newline="True"/>
+            <output expression="&quot;05/05/2024  10500         Diesel       50.0   6.00        60.00        100.00             50.00&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,8 @@
+<flowgorithm fileversion="4.0">
+    <function name="main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;A união dos arquivos foi concluída. Os dados foram salvos em 'pessoas_unidas.csv'.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

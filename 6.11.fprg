@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Criar adega de vinhos vazia&quot;" newline="True"/>
+            <output expression="&quot;A adega de vinhos está pronta para receber novos vinhos&quot;" newline="True"/>
+            <output expression="&quot;Incluir Vinho&quot;" newline="True"/>
+            <output expression="&quot;O vinho Vinho A, da casta Cabernet Sauvignon, Safra 2015 foi adicionado às aquisições&quot;" newline="True"/>
+            <output expression="&quot;Incluir Vinho&quot;" newline="True"/>
+            <output expression="&quot;O vinho Vinho B, da casta Merlot, Safra 2017 foi adicionado às aquisições&quot;" newline="True"/>
+            <output expression="&quot;Incluir Vinho&quot;" newline="True"/>
+            <output expression="&quot;O vinho Vinho C, da casta Chardonnay, Safra 2019 foi adicionado às aquisições&quot;" newline="True"/>
+            <output expression="&quot;Incluir Vinho&quot;" newline="True"/>
+            <output expression="&quot;O vinho Vinho D, da casta Pinot Noir, Safra 2020 foi adicionado às aquisições&quot;" newline="True"/>
+            <output expression="&quot;Incluir Vinho&quot;" newline="True"/>
+            <output expression="&quot;O vinho Vinho E, da casta Sauvignon Blanc, Safra 2016 foi adicionado às aquisições&quot;" newline="True"/>
+            <output expression="&quot;Abrir Ocasião Especial&quot;" newline="True"/>
+            <output expression="&quot;Vinho a ser aberto em uma ocasião especial: Vinho E, Safra: 2016&quot;" newline="True"/>
+            <output expression="&quot;Listar Aquisições Antigas&quot;" newline="True"/>
+            <output expression="&quot;As cinco aquisições mais antigas:&quot;" newline="True"/>
+            <output expression="&quot;Produto: Vinho A, Safra: 2015&quot;" newline="True"/>
+            <output expression="&quot;Produto: Vinho B, Safra: 2017&quot;" newline="True"/>
+            <output expression="&quot;Produto: Vinho C, Safra: 2019&quot;" newline="True"/>
+            <output expression="&quot;Produto: Vinho D, Safra: 2020&quot;" newline="True"/>
+            <output expression="&quot;Produto: Vinho E, Safra: 2016&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

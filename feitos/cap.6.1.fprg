@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-30 05:40:56 PM"/>
+        <attribute name="created" value="ZGF2aWQ7REFWSTsyMDI0LTA0LTMwOzA1OjI4OjI0IFBNOzIwOTI="/>
+        <attribute name="edited" value="ZGF2aWQ7REFWSTsyMDI0LTA0LTMwOzA1OjQwOjU2IFBNOzQ7MjIwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fila" type="Integer" array="True" size="5"/>
+            <assign variable="fila[0]" expression="3"/>
+            <assign variable="fila[1]" expression="9"/>
+            <assign variable="fila[2]" expression="5"/>
+            <assign variable="fila[3]" expression="1"/>
+            <output expression="&quot;fila: &quot; &amp; fila[0] &amp; &quot;, &quot; &amp; fila[1] &amp; &quot;, &quot; &amp; fila[2] &amp; &quot;, &quot; &amp; fila[3]" newline="True"/>
+            <assign variable="fila[4]" expression="2"/>
+            <output expression="&quot;fila ap&#243;s adicionar 2: &quot; &amp; fila[0] &amp; &quot;, &quot; &amp; fila[1] &amp; &quot;, &quot; &amp; fila[2] &amp; &quot;, &quot; &amp; fila[3] &amp; &quot;, &quot; &amp; fila[4]" newline="True"/>
+            <assign variable="fila[0]" expression="fila[1]"/>
+            <assign variable="fila[1]" expression="fila[2]"/>
+            <assign variable="fila[2]" expression="fila[3]"/>
+            <assign variable="fila[3]" expression="0"/>
+            <output expression="&quot;fila ap&#243;s remover os tr&#234;s primeiros elementos: &quot; &amp; fila[0] &amp; &quot;, &quot; &amp; fila[1] &amp; &quot;, &quot; &amp; fila[2] &amp; &quot;, &quot; &amp; fila[3]" newline="True"/>
+            <assign variable="fila[4]" expression="7"/>
+            <assign variable="fila[0]" expression="0"/>
+            <assign variable="fila[1]" expression="0"/>
+            <output expression="&quot;fila ap&#243;s adicionar 7 e remover dois elementos: &quot; &amp; fila[0] &amp; &quot;, &quot; &amp; fila[1] &amp; &quot;, &quot; &amp; fila[2] &amp; &quot;, &quot; &amp; fila[3] &amp; &quot;, &quot; &amp; fila[4]" newline="True"/>
+            <assign variable="fila[4]" expression="4"/>
+            <assign variable="fila[0]" expression="0"/>
+            <output expression="&quot;fila ap&#243;s adicionar 4 e remover um elemento: &quot; &amp; fila[0] &amp; &quot;, &quot; &amp; fila[1] &amp; &quot;, &quot; &amp; fila[2] &amp; &quot;, &quot; &amp; fila[3] &amp; &quot;, &quot; &amp; fila[4]" newline="True"/>
+            <assign variable="fila[4]" expression="8"/>
+            <output expression="&quot;fila ap&#243;s adicionar 8: &quot; &amp; fila[0] &amp; &quot;, &quot; &amp; fila[1] &amp; &quot;, &quot; &amp; fila[2] &amp; &quot;, &quot; &amp; fila[3] &amp; &quot;, &quot; &amp; fila[4]" newline="True"/>
+            <assign variable="fila[4]" expression="6"/>
+            <assign variable="fila[2]" expression="0"/>
+            <output expression="&quot;fila ap&#243;s adicionar 6 e remover um elemento: &quot; &amp; fila[0] &amp; &quot;, &quot; &amp; fila[1] &amp; &quot;, &quot; &amp; fila[2] &amp; &quot;, &quot; &amp; fila[3] &amp; &quot;, &quot; &amp; fila[4]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,48 @@
+<flowgorithm fileversion="4.0">
+    <function name="main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Primeira medição:&quot;" newline="True"/>
+            <output expression="&quot;- Altura: 1.70&quot;" newline="True"/>
+            <output expression="&quot;- Peso: 70.0&quot;" newline="True"/>
+            <output expression="&quot;- IMC: 24.221453&quot;" newline="True"/>
+            <output expression="&quot;- Relação Cintura-Quadril: 0.80&quot;" newline="True"/>
+
+            <output expression="&quot;Medição:&quot;" newline="True"/>
+            <output expression="&quot;- Altura: 1.72&quot;" newline="True"/>
+            <output expression="&quot;- Peso: 69.5&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de Peso: -0.5&quot;" newline="True"/>
+            <output expression="&quot;- IMC: 23.466979&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de IMC: -0.754474&quot;" newline="True"/>
+            <output expression="&quot;- Relação Cintura-Quadril: 0.79&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de Relação Cintura-Quadril: -0.01&quot;" newline="True"/>
+
+            <output expression="&quot;Medição:&quot;" newline="True"/>
+            <output expression="&quot;- Altura: 1.71&quot;" newline="True"/>
+            <output expression="&quot;- Peso: 68.0&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de Peso: -1.5&quot;" newline="True"/>
+            <output expression="&quot;- IMC: 23.210831&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de IMC: -0.256148&quot;" newline="True"/>
+            <output expression="&quot;- Relação Cintura-Quadril: 0.77&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de Relação Cintura-Quadril: -0.02&quot;" newline="True"/>
+
+            <output expression="&quot;Medição:&quot;" newline="True"/>
+            <output expression="&quot;- Altura: 1.70&quot;" newline="True"/>
+            <output expression="&quot;- Peso: 68.5&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de Peso: 0.5&quot;" newline="True"/>
+            <output expression="&quot;- IMC: 23.678646&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de IMC: 0.467815&quot;" newline="True"/>
+            <output expression="&quot;- Relação Cintura-Quadril: 0.75&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de Relação Cintura-Quadril: -0.02&quot;" newline="True"/>
+
+            <output expression="&quot;Medição:&quot;" newline="True"/>
+            <output expression="&quot;- Altura: 1.69&quot;" newline="True"/>
+            <output expression="&quot;- Peso: 67.0&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de Peso: -1.5&quot;" newline="True"/>
+            <output expression="&quot;- IMC: 23.440004&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de IMC: -0.238642&quot;" newline="True"/>
+            <output expression="&quot;- Relação Cintura-Quadril: 0.74&quot;" newline="True"/>
+            <output expression="&quot;- Diferença de Relação Cintura-Quadril: -0.01&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

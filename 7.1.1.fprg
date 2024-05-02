@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-01 06:27:10 PM"/>
+        <attribute name="created" value="ZGF2aWQ7REFWSTsyMDI0LTA1LTAxOzA2OjEyOjA3IFBNOzIwODY="/>
+        <attribute name="edited" value="ZGF2aWQ7REFWSTsyMDI0LTA1LTAxOzA2OjI3OjEwIFBNOzU7MjE5OA=="/>
+    </attributes>
+    <function name="main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="medidas" type="String" array="True" size="7"/>
+            <declare name="dados" type="String" array="False" size=""/>
+            <declare name="arquivo" type="String" array="False" size=""/>
+            <assign variable="arquivo" expression="&quot;medidasFlow.txt&quot;"/>
+            <open expression="arquivo" mode="write"/>
+            <input variable="medidas[0]"/>
+            <input variable="medidas[1]"/>
+            <input variable="medidas[2]"/>
+            <input variable="medidas[3]"/>
+            <input variable="medidas[4]"/>
+            <input variable="medidas[5]"/>
+            <input variable="medidas[6]"/>
+            <assign variable="dados" expression="medidas[0]&amp;&quot;;&quot;&amp;medidas[1]&amp;&quot;;&quot;&amp;medidas[2]&amp;&quot;;&quot;&amp;medidas[3]&amp;&quot;;&quot;&amp;medidas[4]&amp;&quot;;&quot;&amp;medidas[5]&amp;&quot;;&quot;&amp;medidas[6]"/>
+            <write expression="dados"/>
+            <close mode="read"/>
+            <output expression="&quot;Medida gravada com sucesso!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

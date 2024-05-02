@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-04-30 05:09:12 PM"/>
+        <attribute name="created" value="ZGF2aWQ7REFWSTsyMDI0LTA0LTMwOzA0OjU2OjM4IFBNOzIwOTc="/>
+        <attribute name="edited" value="ZGF2aWQ7REFWSTsyMDI0LTA0LTMwOzA1OjA5OjEyIFBNOzE7MjE5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor de a: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Digite o valor de b: &quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="resultado" expression="a + b"/>
+            <output expression="&quot;O resultado da soma &#233;: &quot; &amp; resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

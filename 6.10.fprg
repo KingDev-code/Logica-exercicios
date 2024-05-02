@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pilha" type="Integer" array="True" size="5"/>
+            <declare name="topo" type="Integer" array="False" size=""/>
+            <declare name="item" type="Integer" array="False" size=""/>
+            <declare name="novo" type="Integer" array="False" size=""/>
+            <declare name="atual" type="Integer" array="False" size=""/>
+            <output expression="&quot;Criar pilha vazia&quot;" newline="True"/>
+            <assign variable="topo" expression="0"/>
+            <output expression="&quot;Empilhar o item 1&quot;" newline="True"/>
+            <assign variable="item" expression="1"/>
+            <assign variable="pilha[topo]" expression="item"/>
+            <assign variable="topo" expression="topo + 1"/>
+            <output expression="&quot;Empilhar o item 2&quot;" newline="True"/>
+            <assign variable="item" expression="2"/>
+            <assign variable="pilha[topo]" expression="item"/>
+            <assign variable="topo" expression="topo + 1"/>
+            <output expression="&quot;Empilhar o item 3&quot;" newline="True"/>
+            <assign variable="item" expression="3"/>
+            <assign variable="pilha[topo]" expression="item"/>
+            <assign variable="topo" expression="topo + 1"/>
+            <output expression="&quot;Desempilhar: &quot;" newline="True"/>
+            <assign variable="topo" expression="topo - 1"/>
+            <assign variable="item" expression="pilha[topo]"/>
+            <output expression="item" newline="True"/>
+            <output expression="&quot;Desempilhar: &quot;" newline="True"/>
+            <assign variable="topo" expression="topo - 1"/>
+            <assign variable="item" expression="pilha[topo]"/>
+            <output expression="item" newline="True"/>
+            <output expression="&quot;Pilha vazia, não é possível desempilhar.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

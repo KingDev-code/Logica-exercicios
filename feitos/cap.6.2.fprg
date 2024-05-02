@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-01 08:42:12 AM"/>
+        <attribute name="created" value="ZGF2aWQ7REFWSTsyMDI0LTA1LTAxOzA4OjM4OjQwIEFNOzIwNzg="/>
+        <attribute name="edited" value="ZGF2aWQ7REFWSTsyMDI0LTA1LTAxOzA4OjQyOjEyIEFNOzI7MjE4MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pilha" type="Integer" array="True" size="5"/>
+            <assign variable="pilha[0]" expression="3"/>
+            <assign variable="pilha[1]" expression="9"/>
+            <assign variable="pilha[2]" expression="5"/>
+            <assign variable="pilha[3]" expression="1"/>
+            <output expression="&quot;Pilha inicial: &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1] &amp; &quot;, &quot; &amp; pilha[2] &amp; &quot;, &quot; &amp; pilha[3]" newline="True"/>
+            <assign variable="pilha[4]" expression="2"/>
+            <output expression="&quot;Entra(2): &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1] &amp; &quot;, &quot; &amp; pilha[2] &amp; &quot;, &quot; &amp; pilha[3] &amp; &quot;, &quot; &amp; pilha[4]" newline="True"/>
+            <assign variable="pilha[4]" expression="0"/>
+            <output expression="&quot;Sai: &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1] &amp; &quot;, &quot; &amp; pilha[2] &amp; &quot;, &quot; &amp; pilha[3]" newline="True"/>
+            <assign variable="pilha[3]" expression="0"/>
+            <output expression="&quot;Sai: &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1] &amp; &quot;, &quot; &amp; pilha[2]" newline="True"/>
+            <assign variable="pilha[3]" expression="7"/>
+            <output expression="&quot;Entra(7): &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1] &amp; &quot;, &quot; &amp; pilha[2] &amp; &quot;, &quot; &amp; pilha[3]" newline="True"/>
+            <assign variable="pilha[0]" expression="0"/>
+            <output expression="&quot;Sai: &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1] &amp; &quot;, &quot; &amp; pilha[2]" newline="True"/>
+            <assign variable="pilha[0]" expression="0"/>
+            <output expression="&quot;Sai: &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1]" newline="True"/>
+            <assign variable="pilha[2]" expression="4"/>
+            <output expression="&quot;Entra(4): &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1] &amp; &quot;, &quot; &amp; pilha[2]" newline="True"/>
+            <assign variable="pilha[0]" expression="0"/>
+            <output expression="&quot;Sai: &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1]" newline="True"/>
+            <assign variable="pilha[2]" expression="8"/>
+            <assign variable="pilha[3]" expression="6"/>
+            <output expression="&quot;Entra(8); Entra(6): &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1] &amp; &quot;, &quot; &amp; pilha[2] &amp; &quot;, &quot; &amp; pilha[3]" newline="True"/>
+            <assign variable="pilha[0]" expression="0"/>
+            <output expression="&quot;Sai: &quot; &amp; pilha[0] &amp; &quot;, &quot; &amp; pilha[1] &amp; &quot;, &quot; &amp; pilha[2]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

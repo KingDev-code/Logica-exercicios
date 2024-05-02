@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-05-01 06:48:05 PM"/>
+        <attribute name="created" value="ZGF2aWQ7REFWSTsyMDI0LTA1LTAxOzA2OjQ2OjI1IFBNOzIwOTM="/>
+        <attribute name="edited" value="ZGF2aWQ7REFWSTsyMDI0LTA1LTAxOzA2OjQ4OjA1IFBNOzI7MjIwMg=="/>
+    </attributes>
+    <function name="main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="data, litro, quilometragem, combustivel, litros" type="String" array="False" size=""/>
+            <output expression="&quot;Escolha uma op&#231;&#227;o:\n1. Registrar abastecimento\n2. Sair\nOp&#231;&#227;o: &quot;" newline="False"/>
+            <output expression="&quot;Informe os dados do abastecimento:&quot;" newline="True"/>
+            <input variable="data"/>
+            <input variable="quilometragem"/>
+            <input variable="combustivel"/>
+            <input variable="litros"/>
+            <input variable="litro"/>
+            <output expression="&quot;Abastecimento registrado com sucesso!&quot;" newline="True"/>
+            <output expression="&quot;Encerrando o programa...&quot;" newline="True"/>
+            <output expression="&quot;Op&#231;&#227;o inv&#225;lida! Por favor, escolha novamente.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

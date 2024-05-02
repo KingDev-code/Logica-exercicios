@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Passo 1: Cria uma lista vazia.&quot;" newline="True"/>
+            <output expression="&quot;Passo 2: Insere o elemento 10 na lista, após o elemento 20.&quot;" newline="True"/>
+            <output expression="&quot;Passo 3: Verifica se o antecessor (20) está na lista.&quot;" newline="True"/>
+            <output expression="&quot;Passo 4: Atualiza o início da lista, se necessário.&quot;" newline="True"/>
+            <output expression="&quot;Passo 5: Atualiza o fim da lista, se necessário.&quot;" newline="True"/>
+            <output expression="&quot;Passo 6: Imprime a lista atualizada: 20, 10&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

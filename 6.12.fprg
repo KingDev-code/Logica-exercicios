@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Criar listas de nomes vazias para homens e mulheres&quot;" newline="True"/>
+            <output expression="&quot;As listas de nomes estão prontas para receber novos nomes&quot;" newline="True"/>
+            <output expression="&quot;Incluir nome João na lista de homens&quot;" newline="True"/>
+            <output expression="&quot;Incluir nome Maria na lista de mulheres&quot;" newline="True"/>
+            <output expression="&quot;Nomes de homens: João&quot;" newline="True"/>
+            <output expression="&quot;Nomes de mulheres: Maria&quot;" newline="True"/>
+            <output expression="&quot;Incluir nome Pedro na lista de homens&quot;" newline="True"/>
+            <output expression="&quot;Incluir nome Ana na lista de mulheres&quot;" newline="True"/>
+            <output expression="&quot;Nomes de homens: João, Pedro&quot;" newline="True"/>
+            <output expression="&quot;Nomes de mulheres: Maria, Ana&quot;" newline="True"/>
+            <output expression="&quot;Excluir nome João da lista de homens&quot;" newline="True"/>
+            <output expression="&quot;Excluir nome Maria da lista de mulheres&quot;" newline="True"/>
+            <output expression="&quot;Nomes de homens: Pedro&quot;" newline="True"/>
+            <output expression="&quot;Nomes de mulheres: Ana&quot;" newline="True"/>
+            <output expression="&quot;Excluir nome Pedro da lista de homens&quot;" newline="True"/>
+            <output expression="&quot;Excluir nome Ana da lista de mulheres&quot;" newline="True"/>
+            <output expression="&quot;Nomes de homens: &quot;" newline="True"/>
+            <output expression="&quot;Nomes de mulheres: &quot;" newline="True"/>
+            <output expression="&quot;O nome José não está na lista de homens&quot;" newline="True"/>
+            <output expression="&quot;O nome Mariana não está na lista de mulheres&quot;" newline="True"/>
+            <output expression="&quot;Nomes de homens: &quot;" newline="True"/>
+            <output expression="&quot;Nomes de mulheres: &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

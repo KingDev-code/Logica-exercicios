@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="david"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="adw" type="Integer" expression="12" />
+            <declare name="fila" type="List" array="False" size="100" initialValue="lista" />
+            <declare name="comeco" type="Integer" expression="0" />
+            <declare name="fim" type="Integer" expression="0" />
+            <declare name="i" type="Integer" expression="0" />
+            <declare name="anterior" type="Integer" expression="0" />
+            <declare name="proximo" type="Integer" expression="0" />
+            <declare name="novo" type="Integer" expression="0" />
+            <declare name="inserir" type="Character" expression="'A'" />
+            <declare name="inserirAntecessor" type="Integer" expression="0" />
+            <assign variable="lista" type="List" expression="['', 0, 0]"/>
+            <while expression="True">
+                <input variable="inserir" prompt="Digite 'I' para Inserir, 'E' para Excluir, 'R' para Remover ou 'P' para Print:" />
+                <if expression="inserir == 'I'">
+                    <assign variable="novo" expression="Novo()" />
+                    <if expression="novo == 0">
+                        <output expression="&quot;Não existem mais posições disponíveis!&quot;" />
+                    <else>
+                        <assign variable="inserirAntecessor" expression="comeco" />
+                        <assign variable="i" expression="comeco" />
+                        <while expression="(i != 0) And (lista[i].item < novo.item)">
+                            <assign variable="anterior" expression="i" />
+                            <assign variable="i" expression="lista[i].prox" />
+                            <assign variable="inserirAntecessor" expression="i" />
+                        </while>
+                        <if expression="i == 0">
+                            <assign variable="lista[novo].prox" expression="comeco" />
+                            <assign variable="comeco" expression="novo" />
+                        <elseif expression="lista[i].item == ''">
+                            <assign variable="lista[novo].prox" expression="i" />
+                            <assign variable="lista[anterior].prox" expression="novo" />
+                        <else>
+                            <assign variable="lista[novo].prox" expression="i" />
+                            <assign variable="lista[inserirAntecessor].prox" expression="novo" />
+                        </else>
+                    </if>
+                <elseif expression="inserir == 'E'">
+                    <if expression="Existe(fim)">
+                        <assign variable="proximo" expression="lista[fim].prox" />
+                        <assign variable="lista[fim].prox" expression="0" />
+                        <assign variable="fim" expression="proximo" />
+                    <else>
+                        <output expression="&quot;Posição não existe!&quot;" />
+                    </if>
+                <elseif expression="inserir == 'R'">
+                    <if expression="Existe(comeco)">
+                        <assign variable="proximo" expression="lista[comeco].prox" />
+                        <assign variable="lista[comeco].prox" expression="0" />
+                        <assign variable="comeco" expression="proximo" />
+                    <else>
+                        <output expression="&quot;Posição não existe!&quot;" />
+                    </if>
+                <elseif expression="inserir == 'P'">
+                    <if expression="Existe(comeco)">
+                        <output expression="lista[comeco].item" />
+                    <else>
+                        <output expression="&quot;Fila vazia!&quot;" />
+                    </if>
+                <else>
+                    <output expression="&quot;Comando inválido!&quot;" />
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

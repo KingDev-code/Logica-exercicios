@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lista_circular" type="List"/>
+            <declare name="opcao" type="Integer"/>
+            <output expression="&quot;1. Inserir elemento na lista&quot;" newline="True"/>
+            <output expression="&quot;2. Remover elemento da lista&quot;" newline="True"/>
+            <output expression="&quot;Escolha uma opção: &quot;" newline="True"/>
+            <input variable="opcao"/>
+            <if expression="opcao == 1">
+                <then>
+                    <output expression="&quot;Digite o elemento a ser inserido: &quot;" newline="True"/>
+                    <input variable="elemento"/>
+                    <assign variable="antecessor" expression="None"/>
+                    <assign variable="posicao" expression="elemento"/>
+                    <if expression="not Existe(posicao)">
+                        <then>
+                            <call function="Insere"/>
+                            <output expression="&quot;Elemento inserido na lista!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Antecessor não pertence à lista!&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+            </if>
+            <if expression="opcao == 2">
+                <then>
+                    <output expression="&quot;Digite o elemento a ser removido: &quot;" newline="True"/>
+                    <input variable="elemento"/>
+                    <assign variable="posicao" expression="elemento"/>
+                    <call function="Remove"/>
+                </then>
+            </if>
+            <function name="Existe" type="Boolean">
+                <parameters>
+                    <parameter name="posicao" type="Number"/>
+                </parameters>
+                <body>
+                    <declare name="atual" type="Number"/>
+                    <assign variable="atual" expression="lista_circular"/>
+                    <while expression="True">
+                        <if expression="lista_circular[atual][0] == posicao">
+                            <then>
+                                <return value="True"/>
+                            </then>
+                            <else>
+                                <assign variable="atual" expression="lista_circular[atual][1]"/>
+                            </else>
+                        </if>
+                    </while>
+                    <return value="False"/>
+                </body>
+            </function>
+            <function name="Insere" type="None">
+                <parameters/>
+                <body>
+                    <assign variable="novo" expression="None"/>
+                    <if expression="lista_circular == None">
+                        <then>
+                            <assign variable="novo" expression="lista_circular"/>
+                            <assign variable="lista_circular" expression="lista_circular + 1"/>
+                        </then>
+                        <else>
+                            <assign variable="novo" expression="lista_circular[0]"/>
+                            <assign variable="lista_circular[0]" expression="novo + 1"/>
+                        </else>
+                    </if>
+                    <assign variable="lista_circular[novo][0]" expression="posicao"/>
+                    <assign variable="lista_circular[novo][1]" expression="lista_circular[1]"/>
+                    <assign variable="lista_circular[1]" expression="novo"/>
+                </body>
+            </function>
+            <function name="Remove" type="None">
+                <parameters/>
+                <body>
+                    <declare name="atual" type="Number"/>
+                    <assign variable="atual" expression="lista_circular[1]"/>
+                    <declare name="anterior" type="Number"/>
+                    <assign variable="anterior" expression="None"/>
+                    <while expression="True">
+                        <if expression="lista_circular[atual][0] == posicao">
+                            <then>
+                                <if expression="anterior != None">
+                                    <then>
+                                        <assign variable="lista_circular[anterior][1]" expression="lista_circular[atual][1]"/>
+                                    </then>
+                                </if>
+                                <else>
+                                    <assign variable="lista_circular[1]" expression="lista_circular[atual][1]"/>
+                                </else>
+                                <break/>
+                            </then>
+                        </if>
+                        <else>
+                            <assign variable="anterior" expression="atual"/>
+                            <assign variable="atual" expression="lista_circular[atual][1]"/>
+                        </else>
+                    </while>
+                </body>
+            </function>
+        </body>
+    </function>
+</flowgorithm>
